@@ -5,9 +5,10 @@ This repository contains my LeetCode solutions that I completed while learning D
 ## Goals
 
 - Improve problem-solving skills
+- Track and build consistency through regular practice
 - Strengthen foundational DSA concepts
 - Prepare for coding interviews and internships
-- Build consistency through regular practice
+
 
 ## Languages Used
 
