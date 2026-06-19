@@ -1,6 +1,8 @@
 # LeetCode Solutions
 
 This repository contains my LeetCode solutions that I completed while learning Data Structures and Algorithms.
+My LeetCode Profile:
+https://leetcode.com/u/ShivanshShrivastava2612/
 
 ## Goals
 
