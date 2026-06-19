@@ -63,6 +63,8 @@ Each file contains the accepted solution for the corresponding LeetCode problem.
 
 I continuously update this repository as I solve new problems and revisit older ones for revision.
 
+Note: Multiple solutions were synced to this repository on 19 June 2026 using LeetSync, to sync older solutions to the repository. The upload dates may not correspond to the original submission dates on LeetCode.
+
 ---
 
 *"Consistency beats intensity."*
