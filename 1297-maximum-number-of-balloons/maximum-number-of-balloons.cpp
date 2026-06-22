@@ -1,26 +1,11 @@
 class Solution {
 public:
     int maxNumberOfBalloons(string text) {
-        unordered_map<char, int> balloon;
+        int count[26] = {0};
         for(int i=0; text[i]!='\0'; i++){
-
-            if(text[i]=='b'){
-                balloon['b']++;
-            }
-            if(text[i]=='a'){
-                balloon['a']++;
-            }
-            if(text[i]=='l'){
-                balloon['l']++;
-            }
-            if(text[i]=='o'){
-                balloon['o']++;
-            }
-            if(text[i]=='n'){
-                balloon['n']++;
-            }
+            count[text[i]-'a']++;
         }
 
-        return min({balloon['a'], balloon['b'], balloon['l']/2, balloon['o']/2, balloon['n']});
+        return min({count[1], count[0], count[11]/2, count[14]/2, count[13]});
     }
 };
