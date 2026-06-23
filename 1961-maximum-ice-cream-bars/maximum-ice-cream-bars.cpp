@@ -9,6 +9,9 @@ public:
             coins = coins - costs[i];
             answer++;
             }
+            else{
+                break;
+            }
         }
 
         return answer;
