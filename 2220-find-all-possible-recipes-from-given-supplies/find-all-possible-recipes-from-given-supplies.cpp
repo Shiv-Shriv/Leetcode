@@ -15,7 +15,7 @@ public:
         int flag = 1;
         while(flag!=0){
             flag = 0;
-        for(const auto p : mp){
+        for(const auto &p : mp){
             int found = 1;
             for(int j=0; j<p.second.size(); j++){
                 if(materials.find(p.second[j])==materials.end()){
