@@ -12,11 +12,12 @@ public:
             materials.insert(supplies[i]);
         }
         vector<string> answer;
-        int flag = 1;
+        bool flag = 1;
+        bool found;
         while(flag!=0){
             flag = 0;
         for(const auto &p : mp){
-            int found = 1;
+            found = 1;
             for(int j=0; j<p.second.size(); j++){
                 if(materials.find(p.second[j])==materials.end()){
                     found = 0;
