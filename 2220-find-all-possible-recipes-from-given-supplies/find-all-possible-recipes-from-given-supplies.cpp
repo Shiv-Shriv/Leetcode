@@ -13,11 +13,10 @@ public:
         }
         vector<string> answer;
         bool flag = 1;
-        bool found;
         while(flag!=0){
             flag = 0;
         for(const auto &p : mp){
-            found = 1;
+            bool found = 1;
             for(int j=0; j<p.second.size(); j++){
                 if(materials.find(p.second[j])==materials.end()){
                     found = 0;
