@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<string> findAllRecipes(vector<string>& recipes, vector<vector<string>>& ingredients, vector<string>& supplies) {
-        map<string, vector<string>> mp;
+        unordered_map<string, vector<string>> mp;
         unordered_set<string> materials;
         int n = recipes.size();
         for(int i=0; i<n; i++){
@@ -13,13 +13,14 @@ public:
         }
         vector<string> answer;
         int flag = 1;
-        for(int k=0; flag!=0; k++){
+        while(flag!=0){
             flag = 0;
-        for(auto p : mp){
+        for(const auto p : mp){
             int found = 1;
             for(int j=0; j<p.second.size(); j++){
                 if(materials.find(p.second[j])==materials.end()){
                     found = 0;
+                    break;
                 }
             }
             if(found && materials.find(p.first) == materials.end()){
@@ -28,10 +29,6 @@ public:
                 flag = 1;
             }
         }
-
-            if(flag == 0){
-                break;
-            }
         }
         return answer;
     }
