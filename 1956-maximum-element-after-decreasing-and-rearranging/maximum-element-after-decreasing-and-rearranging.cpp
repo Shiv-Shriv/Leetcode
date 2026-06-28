@@ -12,10 +12,6 @@ public:
             if(arr[i+1] - arr[i]>1){
                 arr[i+1] = arr[i] + 1;
             }
-            else{
-                i++;
-                continue;
-            }
             i++;
         }
         return arr[n-1];
